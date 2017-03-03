@@ -1,31 +1,28 @@
-/** Header**/
-#logo{
-    position:absolute;
-    float:left;
-}
-#Image {
-    z-index: -1;
+header{
+    margin: 0px;
     width: 100%;
-    height: 500px;
-    overflow: hidden;
-    position: relative;
+    height: 80px;
+    }
+
+header h1 {
+    text-align: center;
+    margin-bottom: -40px; 
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
 }
-#Image img {
-    height: 100%;
+#logoplats{
+    display: inline-block;
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    float: left;
+    width: 110px;
+    margin-top: -2em;
 }
 
-
-/** Body **/
 body{
    background-color: #D5D5D5;
 }
 
 
-/** Nav **/
 ul > li > a {
     text-decoration: none;
     color: inherit;
@@ -81,7 +78,7 @@ nav ul li:hover{
 }
 
 
-/** Paragraph & Footer **/
+
 p{
     line-height: 1.25em;
     font-size: 0.9em;
@@ -94,7 +91,6 @@ footer{
     width: 100%;
     height: 5em;
 }
-
 
 @media screen and (max-width: 830px){
     nav ul{
@@ -112,8 +108,8 @@ footer{
         display: block;
     }
 }
-@media screen and (max-width: 1050px){
-#logo{
+@media screen and (max-width: 500px){
+#logoplats{
         display: none;
     }
 }
