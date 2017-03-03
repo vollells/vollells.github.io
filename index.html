@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/normal.css" type="text/css"/>
@@ -23,6 +24,14 @@
             <a href="#"> <li>Location</li></a>
             <a href="#"> <li>Contact</li></a> 
         </ul>
+        <div class="handle">
+            
+            <k>Menu</k>
+            <div class="Menubar"></div>
+            <div class="Menubar"></div>
+            <div class="Menubar"></div>
+        
+        </div>
     </nav>
     <p>
         Normcore knausgaard try-hard live-edge artisan, hell of vegan venmo selfies hammock next level woke tattooed keytar lyft. Retro subway tile typewriter vice shoreditch, flannel asymmetrical man braid cardigan gastropub XOXO. Mumblecore drinking vinegar tumblr cray man bun gastropub. Pork belly church-key distillery tote bag kogi, venmo kinfolk cold-pressed selfies stumptown DIY fap skateboard four loko viral. Celiac try-hard fanny pack, vaporware edison bulb schlitz green juice small batch. Pug polaroid lo-fi, listicle succulents hell of cold-pressed chartreuse fashion axe. Affogato messenger bag semiotics swag
@@ -33,5 +42,12 @@
         <br>
         Schlitz deep v man braid meditation. La croix pinterest narwhal cornhole, woke mlkshk chambray DIY ramps four loko. Enamel pin health goth gochujang poutine, authentic helvetica cardigan 3 wolf moon VHS twee kombucha freegan kogi migas. Vegan XOXO bitters gochujang. Master cleanse woke gentrify, next level tbh tattooed venmo intelligentsia selvage hashtag aesthetic pug glossier church-key. Photo booth leggings whatever prism, locavore man bun gluten-free poutine stumptown flexitarian everyday carry vaporware. PBR&B fam twee williamsburg roof party, glossier mumblecore helvetica ugh tousled hashtag brooklyn.
     </p>
+    <footer>
+    </footer>
+    <script>
+        $('.handle').on('click', function(){
+            $('nav ul').toggleClass('showing');
+        });
+    </script>
 </body>
 </html>
