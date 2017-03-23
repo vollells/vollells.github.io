@@ -77,24 +77,69 @@ nav ul li:hover{
     margin-top: 10px;
     float: right;
 }
-
-
-
 p{
+    padding: 12px 0px;
+    text-align: center;
     line-height: 1.25em;
     font-size: 0.9em;
     padding: 40px;
     width: 75%;
     margin: 0 auto;
 }
+
+/* CONTACT PAGE */
+div.lb{
+    width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+label{
+    padding: 12px 0px;
+}
+.kb{
+    width: 700px;
+    padding: 12px 0px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+select{
+    height: 30px;
+}
+input {
+
+    height: 16px;
+
+}
+textarea{
+    height: 100px;
+}
+option{
+     padding: 12px 0px;
+}
+input[type=button] {
+    background-color: #96858F;
+    height: 50px;
+    width: 700px;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+
 div.xD{
-    
     border-radius: 5px;
     margin: auto;
     background-color: #6D7993;
     width: 80%;
     height: 5em;
-    
 }
 footer{
     padding: 30px;
@@ -103,6 +148,9 @@ footer{
 
 }
 
+
+
+/*Media Querys*/
 @media screen and (max-width: 830px){
     nav ul{
         max-height: 0px;
@@ -118,14 +166,40 @@ footer{
     .handle{
         display: block;
     }
+    div.lb{
+        width: 400px;
+    }
+    .kb{
+        width: 400px;
+    }
+    input[type=button] {
+        width: 400px;
+    }
 }
+
 @media screen and (max-width: 605px){
     div.xD{
         padding-bottom: 30px;
     }
 }
+
+@media screen and (max-width: 422px){
+    div.xD{
+        padding-bottom: 40px;
+    }
+}
+
 @media screen and (max-width: 500px){
-#logoplats{
-        display: none;
+    #logoplats{
+            display: none;
+        }
+    div.lb{
+            width: 300px;
+        }
+    .kb{
+            width: 300px;
+        }
+    input[type=button] {
+        width: 300px;
     }
 }

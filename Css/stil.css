@@ -89,12 +89,20 @@ p{
     width: 75%;
     margin: 0 auto;
 }
-footer{
+div.xD{
+    
     border-radius: 5px;
     margin: auto;
     background-color: #6D7993;
     width: 80%;
     height: 5em;
+    
+}
+footer{
+    padding: 30px;
+    font-family: impact;
+    text-align: center;
+
 }
 
 
@@ -112,6 +120,16 @@ footer{
     }
     .handle{
         display: block;
+    }
+}
+@media screen and (max-width: 605px){
+    div.xD{
+        padding-bottom: 30px;
+    }
+}
+@media screen and (max-width: 422px){
+    div.xD{
+        padding-bottom: 40px;
     }
 }
 @media screen and (max-width: 1050px){
