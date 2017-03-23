@@ -10,6 +10,12 @@ header h1 {
     font-size: 50px;
     font-family: "Times New Roman", Times, serif;
 }
+h1{
+    margin-top: 20px;
+    text-align: center; 
+    font-size: 25px;
+    font-family: "Times New Roman", Times, serif;
+}
 #logoplats{
     display: inline-block;
     position: absolute;
@@ -139,7 +145,6 @@ div.xD{
     margin: auto;
     background-color: #6D7993;
     width: 80%;
-    height: 5em;
 }
 footer{
     padding: 30px;
@@ -177,12 +182,6 @@ footer{
     }
 }
 
-@media screen and (max-width: 605px){
-    div.xD{
-        padding-bottom: 30px;
-    }
-}
-
 @media screen and (max-width: 500px){
     #logoplats{
             display: none;
@@ -195,17 +194,5 @@ footer{
         }
     input[type=button] {
         width: 300px;
-    }
-}
-
-@media screen and (max-width: 422px){
-    div.xD{
-        padding-bottom: 40px;
-    }
-}
-
-@media screen and (max-width: 376px){
-    div.xD{
-        padding-bottom: 70px;
     }
 }
