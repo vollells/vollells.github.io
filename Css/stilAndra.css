@@ -143,7 +143,7 @@ div.xD{
 }
 footer{
     padding: 30px;
-    font-family: Impact, Charcoal, sans-serif;
+    font-family: Impact, Changa One, Charcoal, sans-serif;
     text-align: center;
 
 }
@@ -204,8 +204,8 @@ footer{
     }
 }
 
-@media screen and (max-width: 355px){
+@media screen and (max-width: 376px){
     div.xD{
-        padding-bottom: 50px;
+        padding-bottom: 70px;
     }
 }
