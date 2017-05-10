@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Css/normal.css" type="text/css"/>
         <link  rel="stylesheet" href="Css/stil.css" type="text/css" />
-        <title>The Website</title>
+        <title>Bright Hotel</title>
 
     </head>
 
@@ -37,6 +37,7 @@
             </ul>
 
         </nav>
+        <h1>General Information</h1>
         <p>
             Normcore knausgaard try-hard live-edge artisan, hell of vegan venmo selfies hammock next level woke tattooed keytar lyft. Retro subway tile typewriter vice shoreditch, flannel asymmetrical man braid cardigan gastropub XOXO. Mumblecore drinking vinegar tumblr cray man bun gastropub. Pork belly church-key distillery tote bag kogi, venmo kinfolk cold-pressed selfies stumptown DIY fap skateboard four loko viral. Celiac try-hard fanny pack, vaporware edison bulb schlitz green juice small batch. Pug polaroid lo-fi, listicle succulents hell of cold-pressed chartreuse fashion axe. Affogato messenger bag semiotics swag
             <br>
@@ -46,6 +47,52 @@
             <br>
             Schlitz deep v man braid meditation. La croix pinterest narwhal cornhole, woke mlkshk chambray DIY ramps four loko. Enamel pin health goth gochujang poutine, authentic helvetica cardigan 3 wolf moon VHS twee kombucha freegan kogi migas. Vegan XOXO bitters gochujang. Master cleanse woke gentrify, next level tbh tattooed venmo intelligentsia selvage hashtag aesthetic pug glossier church-key. Photo booth leggings whatever prism, locavore man bun gluten-free poutine stumptown flexitarian everyday carry vaporware. PBR&B fam twee williamsburg roof party, glossier mumblecore helvetica ugh tousled hashtag brooklyn.
         </p>
+        
+        <div class="w3-container">
+          <h2>Photo Gallery</h2>
+        </div>
+        <div class="w3-content w3-display-container">
+
+            <div class="w3-display-container mySlides">
+              <img src="Pictures/Single.jpg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                Singel
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="Pictures/Single%20with%20Ensuite.jpeg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                Single with Ensuite
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="Pictures/Double.jpg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                Double
+              </div>
+            </div>
+            
+            <div class="w3-display-container mySlides">
+              <img src="Pictures/Double%20with%20Ensuite.jpg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                Double with Ensuite
+              </div>
+            </div>
+
+            <div class="w3-display-container mySlides">
+              <img src="Pictures/Hostel%20Room.jpg" style="width:100%">
+              <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                Hostel Room
+              </div>
+            </div>
+
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+        </div>
+        <div class="Spacer"></div>
         <div class="xD">
             
             <footer>
@@ -58,6 +105,24 @@
             $('.handle').on('click', function(){
                 $('nav ul').toggleClass('showing');
             });
+            
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
         </script>
 
     </body>

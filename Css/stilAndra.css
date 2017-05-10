@@ -44,7 +44,7 @@ p{
     position: absolute;
     float: left;
     width: 110px;
-    margin-top: -2em;
+    margin-top: -1.5em;
 }
 
 /*Links and Nav*/
@@ -113,11 +113,11 @@ img{
 }
 .Ps1{
     width: 49%;
-    display: inline-block;
+    display: inline-table;
 }
 .Ps2{
     width: 49%;
-    display: inline-block;
+    display: inline-table;
 }
 .Left{
 }
@@ -196,7 +196,7 @@ footer{
         max-height: 0px;
     }
     .showing {
-        max-height: 20em;
+        max-height: 25em;
     }
     nav ul li {
         box-sizing: border-box;

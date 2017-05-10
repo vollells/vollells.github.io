@@ -12,7 +12,7 @@
     <body>
         <header id="H">
             <a href="index.html"><img id="logoplats" alt="logo" src="Pictures/logoplats.png"></a>
-            <h1>Bright Hotell</h1>
+            <h1>Bright Hotel</h1>
         </header>
         <nav id="Menu">
             <div class="handle">
@@ -33,13 +33,20 @@
             </ul>
 
         </nav>
-        <h1>
+        <h2>
             If you want to book a room please fill out booking form below.
+        </h2>
+        <h1>
+            All payments are made at the hotel!
         </h1>
         
         <form>
             <div class="lb">
-                <label>Name</label>
+                <label>First Name</label>
+                <input type="text" class="kb" name="fname">
+            </div>
+            <div class="lb">
+                <label>Last Name</label>
                 <input type="text" class="kb" name="fname">
             </div>
             <div class="lb">
@@ -47,58 +54,27 @@
                 <input type="text" class="kb" name="lname">
             </div>
             <div class="lb">
-                <label>Continent</label>
+                <label>Kind of room</label>
                 <select class="kb" name="country">
-                    <option value="Eu">Europe</option>
-                    <option value="Na">North America</option>
-                    <option value="Sa">South America</option>
-                    <option value="Ai">Asia</option>
-                    <option value="Oc">Oceania</option>
-                    <option value="Af">Africa</option> 
+                    <option value="One">Singel</option>
+                    <option value="One Plus Bathroom">Singel with Ensuite</option>
+                    <option value="Two">Double</option>
+                    <option value="Two Plus Onesuite">Double with Ensuite</option>
+                    <option value="Hostel">4 People Hostel</option>
                 </select>
             </div>
             <div class="lb">
-                <label >What is your problem?</label>
+                <label >Other Info</label>
                 <textarea class="kb" type="text"> </textarea>
             </div>
             <div class="lb">
-                <input class="lb" type="button" value="Submit">
+                <input class="lb" type="button" value="Book">
             </div>
             
         </form>
         </p>
         
-        <div class="w3-container">
-          <h1>Slideshow Caption</h1>
-        </div>
-
-    <div class="w3-content w3-display-container">
-
-        <div class="w3-display-container mySlides">
-          <img src="Pictures/HOTEL2.jpg">
-          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
-            Singel!
-          </div>
-        </div>
         
-        <div class="w3-display-container mySlides">
-          <img src="Pictures/HOTEL2.jpg" style="width:100%">
-          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
-            Singel!
-          </div>
-        </div>
-        
-        <div class="w3-display-container mySlides">
-          <img src="Pictures/" style="width:100%">
-          <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
-            Singel!
-          </div>
-        </div>
-
-        <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
-
-    </div>
     
         <div class="xD">
             
@@ -112,24 +88,6 @@
             $('.handle').on('click', function(){
                 $('nav ul').toggleClass('showing');
             });
-            
-            var slideIndex = 1;
-            showDivs(slideIndex);
-
-            function plusDivs(n) {
-              showDivs(slideIndex += n);
-            }
-
-            function showDivs(n) {
-              var i;
-              var x = document.getElementsByClassName("mySlides");
-              if (n > x.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = x.length}
-              for (i = 0; i < x.length; i++) {
-                 x[i].style.display = "none";  
-              }
-              x[slideIndex-1].style.display = "block";  
-            }
         </script>
 
     </body>
