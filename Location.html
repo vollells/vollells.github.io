@@ -36,15 +36,15 @@
         </nav>
        
 
+        <h1>Malmö City - Bright Hotel</h1>
         <p>
-            Normcore knausgaard try-hard live-edge artisan, hell of vegan venmo selfies hammock next level woke tattooed keytar lyft. Retro subway tile typewriter vice shoreditch, flannel asymmetrical man braid cardigan gastropub XOXO. Mumblecore drinking vinegar tumblr cray man bun gastropub. Pork belly church-key distillery tote bag kogi, venmo kinfolk cold-pressed selfies stumptown DIY fap skateboard four loko viral. Celiac try-hard fanny pack, vaporware edison bulb schlitz green juice small batch. Pug polaroid lo-fi, listicle succulents hell of cold-pressed chartreuse fashion axe. Affogato messenger bag semiotics swag
-            <br>
-            Artisan hella fap selvage, shoreditch polaroid four loko trust fund. Williamsburg live-edge etsy, hell of pinterest pok pok skateboard crucifix mustache umami roof party four dollar toast man braid. Tilde helvetica salvia street art. Raw denim ugh paleo, banjo put a bird on it tumblr trust fund locavore drinking vinegar single-origin coffee ramps. Kombucha sartorial intelligentsia, mustache hot chicken marfa echo park. Vice cliche put a bird on it, stumptown chia direct trade meh health goth jean shorts pitchfork freegan master cleanse sriracha readymade aesthetic. Tofu flannel austin sartorial, raw denim selvage raclette gastropub direct trade organic pour-over polaroid.
-            <br>
-            Fanny pack vegan swag prism, direct trade forage drinking vinegar microdosing narwhal. Cred hoodie 8-bit butcher chambray offal. Truffaut ennui direct trade, scenester cold-pressed hammock portland farm-to-table. Vinyl raclette iceland single-origin coffee. Shabby chic street art lo-fi gastropub. Keffiyeh tote bag jean shorts lomo 90's lo-fi. Pour-over mlkshk air plant, gentrify coloring book bitters kale chips venmo.
-            <br>
-            Schlitz deep v man braid meditation. La croix pinterest narwhal cornhole, woke mlkshk chambray DIY ramps four loko. Enamel pin health goth gochujang poutine, authentic helvetica cardigan 3 wolf moon VHS twee kombucha freegan kogi migas. Vegan XOXO bitters gochujang. Master cleanse woke gentrify, next level tbh tattooed venmo intelligentsia selvage hashtag aesthetic pug glossier church-key. Photo booth leggings whatever prism, locavore man bun gluten-free poutine stumptown flexitarian everyday carry vaporware. PBR&B fam twee williamsburg roof party, glossier mumblecore helvetica ugh tousled hashtag brooklyn.
+            We are located in central malmo, and we are close to  public transit and several cultural locations 
         </p>
+        
+        <div id="map"></div>
+        
+        <div class="Spacer"></div>
+        
         <div class="xD">
             
             <footer>
@@ -53,10 +53,30 @@
             </footer>
         
         </div>
+        
+
+        
         <script>
+            
             $('.handle').on('click', function(){
                 $('nav ul').toggleClass('showing');
             });
+            
+          function initMap() {
+            var Citadellsvägen = {lat: 55.606739, lng: 12.986679};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 13,
+              center: Citadellsvägen
+
+            });
+            var marker = new google.maps.Marker({
+              position: Citadellsvägen,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9GvLtAxZ8uWDbig6u9uoX5vMaebSd9LY&callback=initMap">
         </script>
 
     </body>
