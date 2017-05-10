@@ -217,11 +217,9 @@ footer{
     }
     .Ps1{
         width: 100%;
-        display: table-cell;
     }
     .Ps2{
         width: 100%;
-        display: table-cell;
     }
     .Left{
         float: auto;
