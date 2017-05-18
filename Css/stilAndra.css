@@ -109,7 +109,7 @@ nav ul li:hover{
 /* Food and Drink & Experience */
 img{
     width: 100%;
-    float: auto;
+
 }
 
 .Ps1{
@@ -231,12 +231,6 @@ footer{
     }
     .Ps2{
         width: 100%;
-    }
-    .Left{
-        float: auto;
-    }
-    .Right{
-        float: auto;
     }
 }
 
